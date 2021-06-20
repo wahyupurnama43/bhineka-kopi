@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .border-b-hover:hover{
+        border-bottom: 2px solid #c59d5f;
+    }
+    .text-black-primary{
+        color:#252525;
+    }
+    .overlay {
+        @apply absolute;
+    }
+    a.active {
+        color:#c59d5f;
+        position: relative;
+    }
+    a.active::after{
+        content : '';
+        display: block;
+        border-bottom:2px solid #c59d5f;
+
+    }
+    .overlay * {
+        @apply transition-all duration-200;
+    }
+    
+    .judul-header{
+        font-family: 'Herr Von Muellerhoff', cursive;
+    }
+
+    
+}
+@layer utilities{
+    section{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 500px;
+        height: 100vh;
+        overflow: hidden;
+        color: #fff;
+        
+    }
+
+    section .cover {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+    }
+    .shActive{
+        @apply bg-white h-24;
+        box-shadow: 3px 1px 20px 3px rgba(175, 175, 175, 0.25);
+    }
+    span.arrow{
+        display: block;
+        position: absolute;
+        left: 50%;
+        height: 10px;
+        width: 10px;
+        border-left: 2px solid white;
+        border-top: 2px solid white;
+        -webkit-transform: translateX(-50%) rotate(45deg);
+        transform: translateX(-50%) rotate(45deg);
+    }
+
+    footer .after::after{
+        content: "\2022";
+        margin: 0 10px;
+    }
+
+}
