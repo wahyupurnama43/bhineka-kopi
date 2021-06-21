@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <title>BHINEKA KOPI</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="apple-touch-icon" href="images/content/favicon.png" />
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="./css/app.minify.css" />
+        <link rel="icon" href="images/content/favicon.png" />
+
+        <meta name="theme-color" content="#000" />
+    </head>
+
+    <body>
+        <!-- START :NAVBAR -->
+        <div class="absolute h-24 md:fixed inset-0 z-50 text-white" id="navbar">
+            <nav id="nav" class="bg-white-700 container mx-auto" role="navigation">
+                <div class="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
+                    <div class="mx-auto md:mr-8">
+                        <a href="#" rel="home focus:outline-none">
+                            <img src="./images/content/logo.png" alt="" class="w-32" />
+                        </a>
+                    </div>
+                    <!-- <div class="ml-auto md:hidden">
+              <button onclick="menuToggle()" class="flex items-center px-3 py-2 border rounded" type="button">
+                <svg class="h-3 w-3 text-black-primary" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Menu</title>
+                  <path fill="currentColor" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                </svg>
+              </button>
+            </div> -->
+                    <div id="menu" class="w-full h-0 hidden transition-all ease-out duration-500 md:transition-none md:w-auto md:flex-grow md:flex md:items-center">
+                        <ul id="ulMenu" class="flex flex-col duration-300 ease-out sm:transition-none mt-5 mx-4 md:flex-row md:items-center md:mx-0 md:ml-auto md:mt-0 md:pt-0 md:border-0 relative">
+                            <li>
+                                <a class="md:p-2 md:px-6 uppercase font-normal block currentColor py-1 mx-auto transition delay-100 ease-in-out transform hover:scale-110 hover:text-yellow-500" href="index.html">Home </a>
+                            </li>
+                            <li>
+                                <a class="md:p-2 md:px-6 uppercase font-normal block currentColor py-1 transition delay-100 ease-in-out transform hover:scale-110 hover:text-yellow-500 active" href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a class="md:p-2 md:px-6 uppercase font-normal block currentColor py-1 transition delay-100 ease-in-out transform hover:scale-110 hover:text-yellow-500" href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a class="md:p-2 md:px-6 uppercase font-normal block currentColor py-1 transition delay-100 ease-in-out transform hover:scale-110 hover:text-yellow-500" href="contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- mobile -->
+        <div class="relative z-50">
+            <div class="md:hidden sm:block bg-white shadow-md h-20 w-full" style="position: fixed; bottom: 0; left: 0; border-radius: 40px 40px 0 0; box-shadow: 3px 1px 20px 3px rgba(175, 175, 175, 0.25);">
+                <div class="container mx-auto mt-6">
+                    <ul class="flex justify-center items-center">
+                        <li>
+                            <a class="uppercase text-base text-smbase block currentColor py-1 mx-auto transition delay-100 ease-in-out transform hover:scale-110 px-5 font-semibold hover:text-yellow-500" href="index.html">Home </a>
+                        </li>
+                        <li>
+                            <a class="uppercase text-base text-smbase block currentColor py-1 transition delay-100 ease-in-out transform hover:scale-110 px-5 font-semibold hover:text-yellow-500 active" href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a class="uppercase text-base text-smbase block currentColor py-1 transition delay-100 ease-in-out transform hover:scale-110 px-5 font-semibold hover:text-yellow-500" href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a class="uppercase text-base text-smbase block currentColor py-1 transition delay-100 ease-in-out transform hover:scale-110 px-5 font-semibold hover:text-yellow-500" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- START :NAVBAR -->
+
+        <!-- START: section hero -->
+        <section class="special relative" data-scrollax-parent="true" id="up">
+            <div
+                class="cover"
+                data-scrollax="properties: { translateY: '30%' }"
+                style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/content/sanur.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+            >
+                <div class="text-center w-full absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                    <p class="text-4xl md:text-6xl uppercase font-bold tracking-widest md:-mt-6">the menu</p>
+                </div>
+
+                <a href="#sanur" class="absolute w-8" style="bottom: 0; left: 50%;">
+                    <svg aria-hidden="true" class="text-white" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            fill="currentColor"
+                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <!-- END: section hero -->
+
+        <!-- START: ABOUT SANUR -->
+        <div class="container mx-auto bg-white px-4" id="sanur">
+            <div class="md:flex mt-4">
+                <div class="text-base md:text-lg font-normal w-full h-full text-gray-700 px-4 text-center md:text-left md:px-7 py-3 md:py-6">
+                    Chef Michel Paris Jr and Head Chef Steve Groves have created a menu of dishe using the finest seasonal produce. Table service throughout for food and drinks. Taking inspiration from around the world, all the dishes on
+                    our menu are
+                </div>
+                <div class="text-base md:text-lg font-normal w-full h-full text-gray-700 px-4 text-center md:text-left md:px-7 py-3 md:py-6">
+                    designed for sharing. Using incredible British produce, whole animals and fish are butchered and prepared on site every day, and paired with ingredients so good they really speak for themselves.
+                </div>
+            </div>
+
+            <div class="md:flex mt-8 relative">
+                <!-- START: STARTER -->
+                <div class="text-gray-700 w-full px-4 md:px-7 py-6 h-full">
+                    <div class="text-2xl md:text-3xl border-b-2 mb-5">
+                        <h1 class="uppercase pb-5 tracking-widest">STARTERS</h1>
+                    </div>
+
+                    <!-- START : MENU 1 -->
+                    <div class="flex justify-between content-center py-4 items-center">
+                        <div>
+                            <h1 class="text-lg md:text-lg  font-semibold mb-1">
+                                ENGLISH-ASPARAGUS
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Asparagus, hens egg, toasted sunflower seeds, Spenwood cheese</p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$14.95</h3>
+                    </div>
+                    <!-- END : MENU 1 -->
+
+                    <!-- START : MENU 2 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                        <div>
+                            <h1 class="text-lg md:text-lg  font-semibold mb-1">
+                              CORNISH-MACKEREL
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$10.45</h3>
+                    </div>
+                    <!-- END : MENU 2 -->
+
+                    <!-- START : MENU 3 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                        <div>
+                            <h1 class="text-lg md:text-xl font-semibold mb-1">
+                              QUAIL
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Smoked quail, crispy egg, spelt, girolles, parsley</p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$9.95</h3>
+                    </div>
+                    <!-- END : MENU 3 -->
+
+                    <!-- START : MENU 4 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                        <div>
+                            <h1 class="text-lg md:text-xl font-semibold mb-1">
+                              CURRY-TAMARILLOR
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Cornish mackerel, marinated tomatoes, fragrant curry, tamarillo</p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$7.95</h3>
+                    </div>
+                    <!-- END : MENU 4 -->
+
+                    <!-- START : MENU 5 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                        <div>
+                            <h1 class="text-lg md:text-xl font-semibold mb-1">
+                              CRISPY
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Smoked quail, crispy egg, spelt, girolles, parsley</p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$12.95</h3>
+                    </div>
+                    <!-- END : MENU 5 -->
+
+                    <!-- START : MENU 6 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                        <div>
+                            <h1 class="text-lg md:text-xl font-semibold mb-1">
+                              ROASTED STEAK ROULADE
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Mint parsley with apple cider vinegar, salt, sugar & spices
+                            </p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$14.95</h3>
+                    </div>
+                    <!-- END : MENU 6 -->
+
+                    <!-- START : MENU 7 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                        <div>
+                            <h1 class="text-lg md:text-xl font-semibold mb-1">
+                              SEASONAL SOUP
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Daily preparation</p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$5.95</h3>
+                    </div>
+                    <!-- END : MENU 7 -->
+
+                    <!-- START : MENU 8 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                      <div>
+                          <h1 class="text-lg md:text-xl font-semibold mb-1">
+                            CAMPO LINDO CHICKEN
+                          </h1>
+                          <p class="text-sm md:text-base font-normal pr-5">Fava beans, artchokes, farro & black current gastrique</p>
+                      </div>
+                      <h3 class="text-lg md:text-xl font-semibold">$24.95</h3>
+                  </div>
+                  <!-- END : MENU 8 -->
+                </div>
+                <!-- END : STARTER -->
+
+                <!-- START: STARTER -->
+                <div class="text-gray-700 w-full px-4 md:px-7 py-6 h-full">
+                    <div class="text-2xl md:text-3xl border-b-2 mb-5">
+                        <h1 class="uppercase pb-5 tracking-widest">MAINS</h1>
+                    </div>
+
+                    <!-- START : MENU 1 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                        <div>
+                            <h1 class="text-lg md:text-xl font-semibold mb-1">
+                                SEA-TROUT
+                            </h1>
+                            <p class="text-sm md:text-base font-normal pr-5">Roast Trout, English asparagus, Jersey Royals, watercress</p>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-semibold">$26.95</h3>
+                    </div>
+                    <!-- END : MENU 1 -->
+
+                    <!-- START : MENU 2 -->
+                    <div class="flex justify-between py-4 content-center items-center">
+                      <div>
+                          <h1 class="text-lg md:text-xl font-semibold mb-1">
+                            ROASTED STEAK ROULADE
+                          </h1>
+                          <p class="text-sm md:text-base font-normal pr-5">Mint parsley with apple cider vinegar, salt, sugar & spices
+                          </p>
+                      </div>
+                      <h3 class="text-lg md:text-xl font-semibold">$14.95</h3>
+                  </div>
+                  <!-- END : MENU 2 -->
+
+                  <!-- START : MENU 3 -->
+                  <div class="flex justify-between py-4 content-center items-center">
+                      <div>
+                          <h1 class="text-lg md:text-xl font-semibold mb-1">
+                            SEASONAL SOUP
+                          </h1>
+                          <p class="text-sm md:text-base font-normal pr-5">Daily preparation</p>
+                      </div>
+                      <h3 class="text-lg md:text-xl font-semibold">$5.95</h3>
+                  </div>
+                  <!-- END : MENU 3 -->
+
+                  <!-- START : MENU 4 -->
+                  <div class="flex justify-between py-4 content-center items-center">
+                    <div>
+                        <h1 class="text-lg md:text-xl font-semibold mb-1">
+                          CAMPO LINDO CHICKEN
+                        </h1>
+                        <p class="text-sm md:text-base font-normal pr-5">Fava beans, artchokes, farro & black current gastrique</p>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold">$24.95</h3>
+                </div>
+                <!-- END : MENU 4 -->
+
+                <div class="text-2xl md:text-3xl mt-5 border-b-2 mb-5">
+                    <h1 class="uppercase pb-5 tracking-widest">DESSERT</h1>
+                </div>
+
+                <!-- START : MENU 2 -->
+                <div class="flex justify-between py-4 content-center items-center">
+                  <div>
+                      <h1 class="text-lg md:text-xl font-semibold mb-1">
+                        ROASTED STEAK ROULADE
+                      </h1>
+                      <p class="text-sm md:text-base font-normal pr-5">Mint parsley with apple cider vinegar, salt, sugar & spices
+                      </p>
+                  </div>
+                  <h3 class="text-lg md:text-xl font-semibold">$14.95</h3>
+              </div>
+              <!-- END : MENU 2 -->
+
+              <!-- START : MENU 3 -->
+              <div class="flex justify-between py-4 content-center items-center">
+                  <div>
+                      <h1 class="text-lg md:text-xl font-semibold mb-1">
+                        SEASONAL SOUP
+                      </h1>
+                      <p class="text-sm md:text-base font-normal pr-5">Daily preparation</p>
+                  </div>
+                  <h3 class="text-lg md:text-xl font-semibold">$5.95</h3>
+              </div>
+              <!-- END : MENU 3 -->
+
+              <!-- START : MENU 4 -->
+              <div class="flex justify-between py-4 content-center items-center">
+                <div>
+                    <h1 class="text-lg md:text-xl font-semibold mb-1">
+                      CAMPO LINDO CHICKEN
+                    </h1>
+                    <p class="text-sm md:text-base font-normal pr-5">Fava beans, artchokes, farro & black current gastrique</p>
+                </div>
+                <h3 class="text-lg md:text-xl font-semibold">$24.95</h3>
+            </div>
+            <!-- END : MENU 4 -->
+                </div>
+                <!-- END : STARTER -->
+            </div>
+        </div>
+        <!-- END: ABOUT SANUR -->
+
+        <!-- FOOTER -->
+        <footer class="mb-20 md:mb-0 mt-16 bg-black-100 h-36 w-full relative">
+            <div class="absolute" style="top: 0; left: 50%; margin-top: -50px; margin-left: -96px;">
+                <svg
+                    class=""
+                    width="192"
+                    height="61"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 160.7 61.5"
+                    enable-background="new 0 0 160.7 61.5"
+                    xml:space="preserve"
+                >
+                    <path fill="#252525" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path>
+                </svg>
+            </div>
+            <a href="#up" class="absolute z-10" style="top: 0; left: 50%; margin-top: -30px; margin-left: -6px;">
+                <div class="w-3">
+                    <svg
+                        aria-hidden="true"
+                        class="text-white transform rotate-180"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="chevron-down"
+                        class="svg-inline--fa fa-chevron-down fa-w-14"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        ></path>
+                    </svg>
+                </div>
+                <div class="w-3">
+                    <svg
+                        aria-hidden="true"
+                        class="text-white -mt-2 transform rotate-180"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="chevron-down"
+                        class="svg-inline--fa fa-chevron-down fa-w-14"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                    >
+                        <path
+                            fill="currentColor"
+                            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+                        ></path>
+                    </svg>
+                </div>
+            </a>
+            <div class="text-center pt-14 text-sm text-gray-200">
+                <p>Copyright 2021, design by wahyu purnama allright reserved</p>
+                <ul class="flex justify-center content-center items-center mt-2">
+                    <li class="text-light text-gray-200 transform transition delay-100 hover:scale-110 after"><a href="">Instagram</a></li>
+                    <li class="text-light text-gray-200 transform transition delay-100 hover:scale-110 after"><a href="">Facebook</a></li>
+                    <li class="text-light text-gray-200 transform transition delay-100 hover:scale-110"><a href="">Google Maps</a></li>
+                </ul>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/scrollax@1.0.0/scrollax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+        <script>
+            window.ga = function () {
+                ga.q.push(arguments);
+            };
+            ga.q = [];
+            ga.l = +new Date();
+            ga("create", "UA-XXXXX-Y", "auto");
+            ga("set", "anonymizeIp", true);
+            ga("set", "transport", "beacon");
+            ga("send", "pageview");
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </body>
+</html>

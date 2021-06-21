@@ -77,6 +77,21 @@
         margin: 0 10px;
     }
 
+    .dots-menu {
+        position: absolute;
+        top: 17px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        margin: 0;
+        border: 0;
+        height: 3px;
+        display: block;
+        background-image: radial-gradient(circle closest-side, currentColor 99%, transparent 1%);
+        background-position: bottom;
+        background-size: 6px 3px;
+        background-repeat: repeat-x;
+    }
 }
 
 @media (max-width:360px){
