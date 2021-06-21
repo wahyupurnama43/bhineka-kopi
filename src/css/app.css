@@ -78,3 +78,12 @@
     }
 
 }
+
+@media (max-width:360px){
+    .text-smbase{
+        @apply text-sm px-4;
+    }
+    .special p{
+        @apply text-3xl;
+    }
+}
